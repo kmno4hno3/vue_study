@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="vue.js"></script>
+</head>
+
+<body>
+
+
+  <div id="app">
+    <p>現在{{ number }}回クリックされています</p>
+    <button v-on:click="countUp(2)">カウントアップ</button>
+    <p v-on:mousemove="chnageMousePosition(3, $event)">マウスを載せて下さい</p>
+    <p>X:{{x}}, Y:{{y}}</p>
+  </div>
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
