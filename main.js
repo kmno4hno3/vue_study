@@ -9,9 +9,12 @@ new Vue({
     countUp: function(times){
       this.number += 1 * times
     },
-    chnageMousePosition: function(divideNumber, event){
+    chnageMousePosition: function(event, divideNumber){
       this.x = event.clientX / divideNumber
       this.y = event.clientY / divideNumber
+    }, 
+    myAlert: function(){
+      alert('アラート')
     }
   }
 })

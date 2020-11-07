@@ -15,8 +15,12 @@
   <div id="app">
     <p>現在{{ number }}回クリックされています</p>
     <button v-on:click="countUp(2)">カウントアップ</button>
-    <p v-on:mousemove="chnageMousePosition(3, $event)">マウスを載せて下さい</p>
+    <p v-on:mousemove="chnageMousePosition($event, 10)">マウスを載せて下さい
+      <span v-on:mousemove.stop>反応しないでください。</span>
+    </p>
+    <a v-on:click.stop.prevent href="https//google.com">Google</a>
     <p>X:{{x}}, Y:{{y}}</p>
+    <input type="text" v-on:keyup.space="myAlert">
   </div>
 
 
